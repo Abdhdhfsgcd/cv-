@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ar">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +12,33 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #f3ec78, #af4261); /* تدرج لوني جذاب */
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s ease infinite;
             color: #333;
             line-height: 1.6;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.8); /* خلفية شفافة للحاوية */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: all 0.3s ease-in-out;
+            text-align: right; /* محاذاة النص لليمين */
+        }
+
+        .container:hover {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
         }
 
         header {
@@ -36,22 +49,26 @@
         header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            color: #007BFF;
+            color: #fff; /* لون العنوان */
         }
 
         header p {
             font-size: 1.2em;
-            color: #555;
+            color: #ddd; /* لون نص هادئ */
         }
 
         section h2 {
             font-size: 1.8em;
             margin-bottom: 10px;
-            color: #007BFF;
+            color: #fff; /* لون أبيض للعناوين */
+            border-bottom: 2px solid #fff; /* خط سفلي أبيض */
+            padding-bottom: 5px;
+            display: inline-block;
         }
 
         ul {
             list-style-type: none;
+            padding-left: 0;
         }
 
         ul li {
@@ -70,41 +87,49 @@
         }
 
         .contact {
-            margin-top: 20px;
+            margin-top: 30px;
             text-align: center;
         }
 
         .contact a {
             display: inline-block;
             margin: 10px;
-            padding: 10px 20px;
+            padding: 12px 25px;
             color: #fff;
             text-decoration: none;
             font-size: 1.2em;
-            border-radius: 5px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .contact a.whatsapp {
             background-color: #25D366;
-            /* لون واتساب */
         }
 
         .contact a.telegram {
             background-color: #0088cc;
-            /* لون تيليجرام */
         }
 
         .contact a.messenger {
             background-color: #006AFF;
-            /* لون مسنجر */
         }
 
         .contact a:hover {
-            opacity: 0.8;
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #888;
         }
     </style>
-</head>
 
+    <!-- إضافة خط Cairo من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+</head>
 <body>
     <div class="container">
         <header>
@@ -125,22 +150,23 @@
 
         <section>
             <h2>الهدف</h2>
-            <p>تطوير نفسي في مجال برمجة وتصميم مواقع الويب، والتعلم المستمر لتحسين مهاراتي وتقديم حلول برمجية متقدمة.
-            </p>
-        </section>
+            <ص>التطوير الذاتي في مجال برمجة مواقع الويب، والتعلم المستمر لتحسين مهارات تقديم حلول برمجية متقدمة.</ص>
+        </قسم>
 
-        <div class="contact">
-            <h2>التواصل</h2>
-            <a href="https://wa.me/218916262147" target="_blank" class="whatsapp">تواصل عبر واتساب</a>
-            <a href="https://t.me/+218916262147" target="_blank" class="telegram">تواصل عبر تيليجرام</a>
-            <a href="https://m.me/100011356415852?hash=AbaFLcbHra0BWgyC&source=qr_link_share" target="_blank"
-                class="messenger">تواصل عبر مسنجر</a>
+        <شعبة فصل="اتصال">
+            <ح2>com.interchange</ح2>
+            <أ href="https://wa.me/218916262147" هدف="_فارغ" فصل="واتس اب">تواصل عبر واتساب</أ>
+            <أ href="https://t.me/+218916262147" هدف="_فارغ" فصل="برقية">التواصل عبر تيليجرام</أ>
+            <أ href="https://m.me/100011356415852?hash=AbaFLcbHra0BWgyC&المصدر=qr_link_share" هدف="_فارغ" فصل="رسول">تواصل عبر مسنجر</أ>
         </div>
     </div>
 
-    <script>
-        console.log("تم تحميل السيرة الذاتية بنجاح");
-    </script>
-</body>
+    <تذييل>
+        <ص>&ينسخ; 2024 عبد الرؤوف نصر الدين الهمالي. جميع الحقوق محفوظة.</ص>
+    </تذييل>
 
-</html>
+    <النصي>
+        console.log("تم تحميل السيرة الذاتية الفعالة");
+    </النصي>
+</جسم>
+</HTML>
